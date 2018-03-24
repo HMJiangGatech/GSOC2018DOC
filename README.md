@@ -23,11 +23,11 @@ Similarly, for nonparametric regression and classification models, current work,
 
 ## Details of your coding project
 
-The student developer will first do code refactoring. The code of the core part should be implemneted by C/C++ and under the support of *Eigen* library. At the same time extansive benchmarking code should be written to ensure the correctness thoughout the development. Next student will implement an efficient proximal Newton solver with novel active set updating strategies in R for a class of sparse learning problems, including sparse undirected graphical model estimation (*Huge*), and nonparametric regression and classification model with functional penalty (*SAM*). We aim to improve the performance of existing solvers in terms of CPU time and estimation accuracy on real and synthetic datasets. Then an unbiased statistical inference module will be implemented for *Huge*. Detailed documentation describing the algorithm and its theoretical properties will be provided in the vignettes.
+The student developer will first do code refactoring. The code of the core part should be implemented by C/C++ and under the support of *Eigen* library. At the same time extensive benchmarking code should be written to ensure the correctness throughout the development. Next student will implement an efficient proximal Newton solver with novel active set updating strategies in R for a class of sparse learning problems, including sparse undirected graphical model estimation (*Huge*), and nonparametric regression and classification model with functional penalties (*SAM*). We aim to improve the performance of existing solvers in terms of CPU time and estimation accuracy on real and synthetic datasets. Then an unbiased statistical inference module will be implemented for *Huge*. Detailed documentation describing the algorithm and its theoretical properties will be provided in the vignettes.
 
 ## Expected impact
 
-*Huge*(>161k downloads)  and *SAM* (>13k downloads) are popular R package for sparse learning. With the delivered solvers and function module, these two packages that can solve a wide class of sparse learning problems under the same algorithmic framework and achieve state-of-the-art performance on each individual problem in terms of CPU time and estimation error. Updated *Huge* will also be the first R package that provides inference module for sparse graphical model.
+*Huge*(>161k downloads)  and *SAM* (>13k downloads) are popular R package for sparse learning. With the delivered solvers and function module, these two packages that can solve a wide class of sparse learning problems under the same algorithmic framework and achieve state-of-the-art performance on each individual problem in terms of CPU time and estimation error. Updated *Huge* will also be the first R package that provides inference module for the sparse graphical model.
 
 
 ## Mentors
@@ -54,10 +54,18 @@ Both mentors are the original developer of *SAM* and *Huge*
 Students, please do one or more of the following tests before
 contacting the mentors above.
 
-- Easy: Download *Huge* and *SAM*. Test them on a synythetic data set respectively.
-- Medium: Add pairwise correlation between columns in the dataset and check how the different solvers perform with highly correlated feature columns.
-- Hard: Since the core code should be implemented by C/C++. Write a simple package implementing Matrix multiplication. The main code should use C/C++.
+- Easy: Download *Huge* and *SAM*. Test them on a synthetic data set respectively.
+- Medium: For *Huge*, test the performance under different sparsity level. For *SAM*, add pairwise correlation between columns in the dataset and check how the different solvers perform with highly correlated feature columns.
+- Hard: Since the core code should be implemented in C/C++. Write a simple package implementing Matrix multiplication. The main code should use C/C++.
 
 ## Solutions of tests
 
 Students, please post a link to your test results here.
+
+## References
+[1]Jerome Friedman, Trevor Hastie and Rob Tibshirani. "glasso: Graphical lasso- estimation of Gaussian graphical models." R package version 1.8 (2014)  
+[2] Hsieh, Cho-Jui, et al. "BIG & QUIC: Sparse inverse covariance estimation for a million variables." Advances in Neural Information Processing Systems, 2013.  
+[3] Jason Ge, Xingguo Li, et al. "Picasso: A Sparse Learning Library for High Dimensional Data Analysis in R and Python" R package version 1.20 (2017)  
+[4] Quanquan Gu, Yuan Cao, Yang Ning, and Han Liu. "Local and Global Inference for High Dimensional Nonparanormal Graphical Models" arXiv:1502.02347, 2015.  
+[5] Tuo Zhao and Han Liu. "Sparse Additive Machine" International Conference on Artificial Intelligence and Statistics, 2012.  
+[6] Tuo Zhao, Xingguo Li, et al. "SAM: Sparse Additive Machine" R package version 1.05 (2015)
