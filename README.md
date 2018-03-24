@@ -47,7 +47,7 @@ Email: lixx1661@umn.edu
 Website: www.tc.umn.edu/~lixx1661/  
 GSOC experience: 2014-2016 as student; 2017 as mentor
 
-Both mentors are the original developer of *SAM* and *Huge*
+Both mentors are the original developers of *SAM* and *Huge*
 
 ## Tests
 
